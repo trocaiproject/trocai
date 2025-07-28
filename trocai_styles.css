@@ -1,0 +1,136 @@
+/* trocai_styles.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0e1116;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0b0e13;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 255, 128, 0.1);
+}
+
+header h1 {
+  font-size: 28px;
+  color: #00ff91;
+}
+
+nav a {
+  color: #f1f1f1;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00ff91;
+}
+
+.hero {
+  padding: 100px 40px;
+  background: linear-gradient(to right, #0b0e13, #131922);
+  text-align: left;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #dcdcdc;
+  max-width: 600px;
+}
+
+.section {
+  padding: 60px 40px;
+  text-align: left;
+}
+
+.section h3 {
+  font-size: 28px;
+  color: #00ff91;
+  margin-bottom: 20px;
+}
+
+.step {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.step i {
+  font-size: 24px;
+  color: #00ff91;
+  margin-top: 4px;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.buttons a {
+  background-color: #00ff91;
+  color: #0b0e13;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.buttons a:hover {
+  background-color: #00e67e;
+}
+
+footer {
+  background-color: #0b0e13;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilos para o botão de feedback */
+.feedback-button {
+  background-color: #00ff91;
+  color: #0b0e13;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feedback-button:hover {
+  background-color: #00e67e;
+  transform: translateY(-2px);
+}
+
+
